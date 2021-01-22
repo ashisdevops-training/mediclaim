@@ -18,7 +18,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<sonar.coverage.exclusions>**mediclaim/*,**/config/*,**/entity/*,**/dto/*,**/repository/*,**/exception/*,**/util/*</sonar.coverage.exclusions>
-		
+		<sonar.sources>src/main/java,src/main/webapp</sonar.sources>
 		<sonar.host.url>http://35.223.43.240:9000</sonar.host.url>
   			<sonar.login>admin</sonar.login>
   			<sonar.password>admin123</sonar.password>
