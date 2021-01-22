@@ -18,6 +18,10 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<sonar.coverage.exclusions>**mediclaim/*,**/config/*,**/entity/*,**/dto/*,**/repository/*,**/exception/*,**/util/*</sonar.coverage.exclusions>
+		
+		<sonar.host.url>http://35.223.43.240:9000</sonar.host.url>
+  			<sonar.login>admin</sonar.login>
+  			<sonar.password>admin123</sonar.password>
 	</properties>
 
 	<dependencies>
@@ -97,4 +101,16 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://35.223.43.240:8083/repository/maven-snapshots</url>
+  </snapshotRepository>
+  
+  <repository>
+    <id>nexus</id>
+    <url>http://35.223.43.240:8083/repository/maven-releases</url>
+  </repository>
+</distributionManagement>
+	
 </project>
